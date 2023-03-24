@@ -11,8 +11,26 @@ const ProductForm = ({ title, subTitle, buttonText, submitFunction, productInfo,
             ...previousState,
             [e.target.name]: e.target.value
         }))
-        // console.log(productInfo)
+        console.log(productInfo)
     }
+    // const sizeChangeHandler = (e) => {
+    //     setProductInfo((previousState) => ({
+    //         ...previousState,
+    //         size: {
+    //             ...previousState.size,
+    //             [e.target.name]: e.target.value}
+    //     }))
+    //     console.log(productInfo)
+    // }
+    // const labelChangeHandler = (e) => {
+    //     setProductInfo((previousState) => ({
+    //         ...previousState,
+    //         size: {
+    //             ...previousState.label,
+    //             [e.target.name]: e.target.value}
+    //     }))
+    //     console.log(productInfo)
+    // }
 
     const handlePriceChange = (e) => {
         let input = e.target.value.replace(/[^\d]/g, '');
@@ -82,7 +100,7 @@ const ProductForm = ({ title, subTitle, buttonText, submitFunction, productInfo,
                     <div className='mb-6 w-full'>
                         <p className='text-md font-semibold mb-2 uppercase' >Main Category</p>
                         <select onChange={changeHandler} name="mainCategory" value={productInfo.mainCategory} className=' w-full p-3 border' >
-                            <option value="bikes">Bikes</option>
+                            <option value="motorcycles">Motorcycles</option>
                             <option value="components">Components</option>
                             <option value="accessories">Accessories</option>
                         </select>
@@ -132,15 +150,8 @@ const ProductForm = ({ title, subTitle, buttonText, submitFunction, productInfo,
                     {/*---------- Size ---------- */}
                     <div className='mb-6 w-full'>
                         <p className='text-md font-semibold mb-2 uppercase' >Size</p>
-                        <select onChange={changeHandler} name="size" value={productInfo.size} className=' w-full p-3 border' >
-                            <option value="One Size">One Size</option>
-                            <option value="XS">X-Small</option>
-                            <option value="S">Small</option>
-                            <option value="M">Medium</option>
-                            <option value="L">Large</option>
-                            <option value="XL">X-Large</option>
-                            <option value="XXL">2X-Large</option>
-                        </select>
+                        <input onChange={changeHandler} name="size" value={productInfo.size} className=' w-full p-3 border' />
+                        {/* <input onChange={labelChangeHandler} name="label" value={productInfo.size.label} className=' w-full p-3 border' /> */}
                     </div>
                 </div>
                 <RedButton buttonText={buttonText} />
