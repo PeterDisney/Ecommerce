@@ -54,9 +54,9 @@ const ProductSchema = new mongoose.Schema(
             minLength: [3, 'Color Name must be at least {MINLENGTH} characters.']
         },
         size: {
-            type: String,
-            required: [true, 'Size is required.'],
-            minLength: [1, 'Size must be at least {MINLENGTH} characters.']
+                type: String,
+                required: [true, 'Size is required.'],
+                minLength: [1, 'Size must be at least {MINLENGTH} characters.']
         },
         image: {}
     },

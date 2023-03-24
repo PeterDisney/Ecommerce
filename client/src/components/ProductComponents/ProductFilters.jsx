@@ -15,24 +15,48 @@ const ProductFilters = () => {
   };
   const categories = [
     {
-      name: "bikes",
-      text: "Bikes",
+      name: "motorcycles",
+      text: "Motorcycles",
       subcategory: [
         {
-          name: "trail",
-          text: "Trail",
+          name: "street",
+          text: "Street",
         },
         {
-          name: "allMountain",
-          text: "All Mountain",
+          name: "sport",
+          text: "Sport",
+        },
+        {
+          name: "sporttouring",
+          text: "Sport Touring",
+        },
+        {
+          name: "touring",
+          text: "Touring",
+        },
+        {
+          name: "naked",
+          text: "Naked",
         },
         {
           name: "enduro",
           text: "Enduro",
         },
         {
-          name: "downhill",
-          text: "Downhill",
+          name: "adventure",
+          text: "Adventure",
+        },
+        {
+          name: "cruiser",
+          text: "Cruiser",
+        },
+        {
+          name: "caferacer",
+          text: "Cafe Racer",
+        },
+        {
+          name: "bobber",
+          text: "Bobber",
         },
       ],
     },
@@ -40,6 +64,22 @@ const ProductFilters = () => {
       name: "components",
       text: "Components",
       subcategory: [
+        {
+          name: "air&fuel",
+          text: "Air & Fuel",
+        },
+        {
+          name: "batteries",
+          text: "Batteries",
+        },
+        {
+          name: "body",
+          text: "Drivetrain",
+        },
+        {
+          name: "brakes",
+          text: "Brakes",
+        },
         {
           name: "drivetrain",
           text: "Drivetrain",
@@ -49,8 +89,12 @@ const ProductFilters = () => {
           text: "Suspension",
         },
         {
-          name: "brakes",
-          text: "Brakes",
+          name: "exhaust",
+          text: "Exhaust",
+        },
+        {
+          name: "footcontrols",
+          text: "Foot Controls",
         },
         {
           name: "tires",
@@ -71,12 +115,24 @@ const ProductFilters = () => {
           text: "Bags",
         },
         {
+          name: "electronics",
+          text: "Electronics",
+        },
+        {
           name: "tools",
           text: "Tools",
         },
         {
           name: "hydration",
           text: "Hydration",
+        },
+        {
+          name: "cleaning",
+          text: "Cleaning",
+        },
+        {
+          name: "ridinggear",
+          text: "Riding Gear",
         },
       ],
     },
