@@ -74,7 +74,7 @@ const ProductFilters = () => {
         },
         {
           name: "body",
-          text: "Drivetrain",
+          text: "Body",
         },
         {
           name: "brakes",
