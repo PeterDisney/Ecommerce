@@ -21,7 +21,7 @@ const ProductGrid = ({ allProducts, loaded, page, setPage, totalPages }) => {
   return (
     // Body
     <div className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-100 to-gray-300 min-h-screen">
-      <div className="max-w-screen-xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-3 gap-10 p-4 ">
+      <div className="max-w-screen-xl mx-auto grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 md:grid-rows-3 sm:grid-rows-2 xsm:grid-rows-1 gap-10 p-4 ">
         <ProductFilters />
         {/* ------------Loop through all products-------------- */}
         {loaded ? allProducts.map((product, key) =>
