@@ -199,7 +199,7 @@ const ProductFilters = () => {
           isMenuOpen ? "block" : "hidden"
         } md:block mt-4 sm:mt-0 sm:ml-4 sm:flex-shrink-0 sm:w-fit`}
       >
-    <div className="bg-white rounded shadow row-span-fit">
+    <div className="bg-white rounded row-span-fit">
       <div>
         {categories.map((category) => (
           <React.Fragment>
