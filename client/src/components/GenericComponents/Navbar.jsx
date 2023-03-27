@@ -22,7 +22,7 @@ const Navbar = () => {
                     <li className='p-4 text-white'>
                         <Menu as="div" className="relative inline-block text-left">
                             <Menu.Button>
-                                Bikes
+                                Motorcycles
                             </Menu.Button>
                             <Transition
                                 as={Fragment}
@@ -38,20 +38,50 @@ const Navbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/trail"
+                                                    href="/products/subcategory/street"
                                                     className={`block px-4 py-2 text-sm ${active ? "bg-gray-100 text-gray-900" : "text-gray-700"}`}
                                                 >
-                                                    Trail
+                                                    Street
                                                 </a>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/allmountain"
+                                                    href="/products/subcategory/sport"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    All Mountain
+                                                    Sport
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/sporttouring"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Sport Touring
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/touring"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Touring
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/naked"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Naked
                                                 </a>
                                             )}
                                         </Menu.Item>
@@ -68,10 +98,40 @@ const Navbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/downhill"
+                                                    href="/products/subcategory/adventure"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Downhill
+                                                    Adventure
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/cruiser"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Cruiser
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/caferacer"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Cafe Racer
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/bobber"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Bobber
                                                 </a>
                                             )}
                                         </Menu.Item>
@@ -102,7 +162,47 @@ const Navbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/drivetrain"
+                                                    href="/products/subcategory/airfuel"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Air & Fuel
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/batteries"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                   Batteries
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/body"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                   Body
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/brakes"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Brakes
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/Drivetrain"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
                                                     Drivetrain
@@ -122,20 +222,20 @@ const Navbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/brakes"
+                                                    href="/products/subcategory/exhaust"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Brakes
+                                                    Exhaust
                                                 </a>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/saddles"
+                                                    href="/products/subcategory/footcontrols"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Saddles
+                                                    Foot Controls
                                                 </a>
                                             )}
                                         </Menu.Item>
@@ -196,6 +296,16 @@ const Navbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
+                                                    href="/products/subcategory/electronics"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Electronics
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
                                                     href="/products/subcategory/tools"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
@@ -216,10 +326,20 @@ const Navbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/racks"
+                                                    href="/products/subcategory/cleaning"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Racks
+                                                    Cleaning
+                                                </a>
+                                            )}
+                                        </Menu.Item>
+                                        <Menu.Item>
+                                            {({ active }) => (
+                                                <a
+                                                    href="/products/subcategory/ridinggear"
+                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
+                                                >
+                                                    Riding Gear
                                                 </a>
                                             )}
                                         </Menu.Item>
