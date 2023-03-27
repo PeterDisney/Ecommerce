@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className=' w-full text-white bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
             {/* OG background bg-stone-800  */}
-            <div className=' mx-auto max-w-screen-xl w-full flex justify-center sm:justify-between items-center py-2 px-4  text-white bg-transparent font-body flex-wrap'>
+            <div className=' mx-auto max-w-screen-xl w-full flex justify-center md:justify-between items-center py-2 px-4 xsm:justify-between items-center py-2 px-4  text-white bg-transparent font-body flex-wrap'>
 
                 {/*----------- Company Logo ------------ */}
                 <CompanyLogo linkRoute='/' />
