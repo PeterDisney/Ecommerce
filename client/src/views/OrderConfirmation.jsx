@@ -14,7 +14,7 @@ const OrderConfirmation = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/order/${id}`)
+    axios.get(`http://localhost:8000/api/order/${id}`)
       .then(res => {
         let { order } = res.data
         let { billing, shipping } = res.data.order

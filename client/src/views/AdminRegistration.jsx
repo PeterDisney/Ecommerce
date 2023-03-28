@@ -24,7 +24,7 @@ const AdminRegistration = () => {
   const submitHandler = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post('http://localhost:8000/admin', registrationInfo, {
+      const res = await axios.post('http://localhost:8000/api/admin', registrationInfo, {
         withCredentials: true,
       })
       navigate("/dashboard/orders")

@@ -188,7 +188,7 @@ const CheckoutForm = ({ cart, setCart }) => {
 
         try {
             // Creating Payment Method using Card Element
-            const { data } = await axios.post('http://localhost:8000/charge', {
+            const { data } = await axios.post('http://localhost:8000/api/stripe/charge', {
                 amount: Math.round(orderInfo.total * 100), // convert total to cents
                 currency: "usd",
                 cardElement: stripeInfo

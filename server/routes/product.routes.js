@@ -9,6 +9,6 @@ module.exports = app => {
     app.post('/api/product',  upload.single('image'),  ProductController.createNewProduct);
     app.put('/api/product/:id', upload.single('image'), ProductController.updateExistingProduct);
     app.delete('/api/product/:id', ProductController.deleteAnExistingProduct);
-    app.get('/api/categories', ProductController.getCategories);
-    app.get('/api/:type/:name/:page', ProductController.getByMainOrSubCategory);
+    app.get('/api/product/categories', ProductController.getCategories);
+    app.get('/api/product/:type/:name/:page', ProductController.getByMainOrSubCategory);
 }

@@ -13,7 +13,7 @@ const FilteredProductsList = () => {
   const { type, name } = useParams()
   
   useEffect(() => {
-    axios.get(`http://localhost:8000/api/${type}/${name}/${page}`)
+    axios.get(`http://localhost:8000/api/product/${type}/${name}/${page}`)
       .then((res) => {
         const {products, totalPages} = res.data
         setAllProducts(products);

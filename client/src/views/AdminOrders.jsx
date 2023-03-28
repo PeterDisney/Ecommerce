@@ -32,10 +32,10 @@ const AdminOrders = ({ setCart }) => {
       let response
       try {
         if (searched) {
-          response = await axios.get(`http://localhost:8000/search/${searchTerm}/${page}`)
+          response = await axios.get(`http://localhost:8000/api/search/${searchTerm}/${page}`)
         }
         else {
-          response = await axios.get(`http://localhost:8000/order/view/${page}`)
+          response = await axios.get(`http://localhost:8000/api/order/view/${page}`)
         }
         console.log(response.data);
         setAllOrders(response.data.orders);

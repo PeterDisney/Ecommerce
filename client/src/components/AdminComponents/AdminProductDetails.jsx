@@ -39,6 +39,7 @@ const AdminProductDetails = () => {
           color: product.color,
           colorName: product.colorName,
           size: product.size,
+          image: product.image,
         }));
         setLoaded(true);
       })
@@ -53,9 +54,9 @@ const AdminProductDetails = () => {
           {/* -------- Product Image -------- */}
           <div className="bg-white col-span-1 sm:col-span-2 lg:col-span-3 items-center p-8 min-h-full">
             <img
-              src="https://jnsn.imgix.net/globalassets/product-images---all-assets/yeti-2021/bi002905-turquoise.jpg?w=1000&auto=format&q=70&fit=max"
+              src={productInfo.image.location}
               className=""
-              alt="bike"
+              alt={productInfo.name}
             />
           </div>
 
