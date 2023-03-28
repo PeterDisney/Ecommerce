@@ -7,7 +7,7 @@ const OrdersTable = ({search, searchTerm, setSearchTerm, clearCart, loaded, allO
     <div className="max-w-screen-xl mx-auto ">
           <div className="flex items-center justify-between pb-4">
             <form onSubmit={search} className="p-0">
-              <input type="search" value={searchTerm} onChange={e => {setSearchTerm(e.target.value)}} name="search" className="p-2 border" />
+              <input placeholder="Search" type="search" value={searchTerm} onChange={e => {setSearchTerm(e.target.value)}} name="search" className="p-2 border" />
               <button className="p-2">
                 <FaSearch className="fa-7x" />
               </button>

@@ -42,7 +42,7 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
 
         <div className='flex items-center justify-between pb-4'>
           <form onSubmit={search} className='p-0'>
-            <input type="search" name="search" value={searchTerm} onChange={searchChange} className='p-2 border' />
+            <input placeholder="Search" type="search" name="search" value={searchTerm} onChange={searchChange} className='p-2 border' />
             <button className='p-2'><FaSearch className='fa-7x' /></button>
           </form>
           <form action='/products/create' className='p-0 w-48'>
