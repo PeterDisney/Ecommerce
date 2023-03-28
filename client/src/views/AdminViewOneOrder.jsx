@@ -16,7 +16,7 @@ const AdminViewOneOrder = () => {
 
   useEffect(() => {
     console.log(id)
-    axios.get(`http://localhost:8000/order/${id}`)
+    axios.get(`http://localhost:8000/api/order/${id}`)
       .then(res => {
         let { order } = res.data
         let { billing, shipping } = res.data.order

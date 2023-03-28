@@ -8,7 +8,7 @@ const AdminNavBar = () => {
   const navigate = useNavigate()
 
   const logout = () => {
-    axios.post('http://localhost:8000/admin/logout', {}, {
+    axios.post('http://localhost:8000/api/admin/logout', {}, {
       withCredentials: true,
     })
       .then(res => {

@@ -20,7 +20,7 @@ const AdminLogin = () => {
     const submitHandler = async (e) => {
       e.preventDefault()
       try {
-        const res = await axios.post('http://localhost:8000/admin/login', loginInfo, {
+        const res = await axios.post('http://localhost:8000/api/admin/login', loginInfo, {
           withCredentials: true,
         })
         navigate("/dashboard/orders")

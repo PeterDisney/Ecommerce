@@ -8,7 +8,7 @@ const ProtectedRoute = ({ element: Component, ...rest }) => {
 
   useEffect(() => {
       axios
-        .get("http://localhost:8000/api/authenticate", {
+        .get("http://localhost:8000/api/admin/authenticate", {
           withCredentials: true,
         })
         .then((res) => {
