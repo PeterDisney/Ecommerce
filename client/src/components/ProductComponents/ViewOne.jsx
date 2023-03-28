@@ -93,7 +93,7 @@ const ViewOne = ({ cart, setCart }) => {
           <div className="bg-white flex flex-col  p-8">
             <p className="text-2xl my-4">{productInfo.brand}</p>
             <h2 className="text-3xl font-bold uppercase">{productInfo.name}</h2>
-            <p className="text-xl my-4">${productInfo.price}</p>
+            <p className="text-xl my-4">{Number(productInfo.price).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</p>
 
             {/* Color Picker */}
             <form onSubmit={addProduct}>
