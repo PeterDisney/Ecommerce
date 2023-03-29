@@ -32,7 +32,7 @@ const AdminOrders = ({ setCart }) => {
       let response
       try {
         if (searched) {
-          response = await axios.get(`http://localhost:8000/api/search/${searchTerm}/${page}`)
+          response = await axios.get(`http://localhost:8000/api/order/search/${searchTerm}/${page}`)
         }
         else {
           response = await axios.get(`http://localhost:8000/api/order/view/${page}`)
