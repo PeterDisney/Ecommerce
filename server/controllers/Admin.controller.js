@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 
 
 // Read All
-module.exports.getAllAdmins = (res) => {
+module.exports.getAllAdmins = (req, res) => {
   Admins.find()
     .then(allAdmins => res.json({ admins: allAdmins }))
     .catch(err => res.json({ message: 'Something went wrong', error: err }));
