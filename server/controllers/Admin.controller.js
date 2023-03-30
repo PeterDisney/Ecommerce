@@ -69,7 +69,7 @@ module.exports.adminLogin = async (req, res) => {
     const adminToken = jwt.sign(payload, process.env.ADMIN_LOGIN_REG_SECRET_KEY)
 
     res
-      .cookie("adminToken", adminToken, { domain: "100.25.180.240" })
+      .cookie("adminToken", adminToken, { domain: "www.motomarket.shop" })
       .json({ msg: "login succesful" })
   } catch (err) {
     console.log(err);
