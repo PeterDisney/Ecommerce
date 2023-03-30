@@ -82,7 +82,7 @@ const ViewOne = ({ cart, setCart }) => {
 
   return (
     // Body
-    <div className="bg-gradient-to-br from-slate-50 to-stone-300 p-2 min-h-screen ">
+    <div className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-100 to-gray-300 p-2 min-h-screen ">
       {loaded ? (
         <div className="max-w-screen-xl mx-auto grid  sm:grid-cols-3 lg:grid-cols-4 rounded shadow ">
           {/* -------- Product Image -------- */}
