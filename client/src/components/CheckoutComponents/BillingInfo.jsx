@@ -14,7 +14,7 @@ const BillingInfo = ({ CheckoutChangeHandler }) => {
             </div>
             {/*---------- First Name ---------- */}
             <div className=' mb-6'>
-                <p className='text-md font-semibold mb-2 uppercase focus:bg-slate-50'>Frist Name*</p>
+                <p className='text-md font-semibold mb-2 uppercase focus:bg-slate-50'>First Name*</p>
                 <input onChange={CheckoutChangeHandler} type="text" name="billingFirstName" className=' w-full p-3 border' />
             </div>
             {/*---------- Last Name ---------- */}

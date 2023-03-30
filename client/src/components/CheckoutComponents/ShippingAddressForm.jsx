@@ -8,7 +8,7 @@ const ShippingAddressForm = ({ CheckoutChangeHandler }) => {
 
             {/*---------- Shipping First Name ---------- */}
             <div className=' my-6'>
-                <p className='text-md font-semibold mb-2 uppercase focus:bg-slate-50'>Frist Name*</p>
+                <p className='text-md font-semibold mb-2 uppercase focus:bg-slate-50'>First Name*</p>
                 <input onChange={CheckoutChangeHandler} type="text" name="shippingFirstName" className=' w-full p-3 border' />
             </div>
             {/*---------- Shipping Last Name ---------- */}

@@ -13,25 +13,7 @@ const ProductForm = ({ title, subTitle, buttonText, submitFunction, productInfo,
         }))
         console.log(productInfo)
     }
-    // const sizeChangeHandler = (e) => {
-    //     setProductInfo((previousState) => ({
-    //         ...previousState,
-    //         size: {
-    //             ...previousState.size,
-    //             [e.target.name]: e.target.value}
-    //     }))
-    //     console.log(productInfo)
-    // }
-    // const labelChangeHandler = (e) => {
-    //     setProductInfo((previousState) => ({
-    //         ...previousState,
-    //         size: {
-    //             ...previousState.label,
-    //             [e.target.name]: e.target.value}
-    //     }))
-    //     console.log(productInfo)
-    // }
-
+    
     const handlePriceChange = (e) => {
         let input = e.target.value.replace(/[^\d]/g, '');
         let cents = parseInt(input, 10);
