@@ -66,7 +66,7 @@ const AdminViewOneOrder = () => {
   return (
     <>
       <AdminNavBar />
-      <div className='bg-gradient-to-br from-slate-50 to-stone-300 min-h-screen '>
+      <div className='bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-100 to-gray-300 min-h-screen '>
         {/* ----------- Order Summary --------------- */}
         {
           loaded ?

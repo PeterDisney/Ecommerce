@@ -2,7 +2,7 @@ import React from 'react'
 
 const OrderSummary = ({ order }) => {
   return (
-    <div className='bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-100 to-gray-300 rounded shadow p-4 flex flex-col'>
+    <div className='bg-white rounded shadow p-4 flex flex-col'>
       {/* ----------- Order Summary Info --------------- */}
       <p className='text-xl mb-2 uppercase font-semibold'>Order Summary:</p>
 
