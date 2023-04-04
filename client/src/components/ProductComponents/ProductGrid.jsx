@@ -28,7 +28,7 @@ const ProductGrid = ({ allProducts, loaded, page, setPage, totalPages }) => {
           <div className="bg-white flex flex-col justify-between items-center rounded shadow p-4" key={key}>
             <div className="w-full relative pb-[56.25%]">
               <a href={`/products/${product._id}`}>
-                <img className="w-full h-full absolute object-cover" src={product.image.location} alt={product.name} />
+                <img className="w-full h-full absolute object-cover" src={`https://ds3rnipsrzco1.cloudfront.net/${product.image.key}`} alt={product.name} />
               </a>
             </div>
             <p className="text-center my-4">{product.brand} {product.name}</p>

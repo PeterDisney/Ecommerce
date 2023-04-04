@@ -65,7 +65,7 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
                 return (
                   <tr className='border-b hover:bg-neutral-50' key={i}>
                     <td className='text-base py-4 px-5 w-10'>
-                      <img src={product.image.location} alt={product.name} />
+                      <img src={`https://ds3rnipsrzco1.cloudfront.net/${product.image.key}`} alt={product.name} />
                     </td>
                     <td className='text-base py-4 px-5 underline text-blue-700 '>
                       <a href={'/products/show/' + product._id}>{product._id}</a>
