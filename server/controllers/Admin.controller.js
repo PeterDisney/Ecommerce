@@ -71,7 +71,7 @@ module.exports.adminLogin = async (req, res) => {
     res
       // cookie response for the admin token and domain name
       .cookie("adminToken", adminToken, { domain: ".motomarket.shop" })
-      .json({ msg: "login succesful" })
+      .json({ msg: "login succesful!" })
   } catch (err) {
     console.log(err);
     // send err and error message
