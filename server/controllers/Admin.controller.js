@@ -67,7 +67,7 @@ module.exports.adminLogin = async (req, res) => {
 
     // create JWT
     const adminToken = jwt.sign(payload, process.env.ADMIN_LOGIN_REG_SECRET_KEY)
-
+    console.log(adminToken);
     res
       // cookie response for the admin token and domain name
       .cookie("adminToken", adminToken, { domain: ".motomarket.shop" })

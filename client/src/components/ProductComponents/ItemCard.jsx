@@ -64,7 +64,7 @@ const ItemCard = ({
               <img
                 className="cursor-pointer w-full h-full absolute object-cover"
                 onClick={returnToProduct}
-                src={productInfo.image.location}
+                src={`https://ds3rnipsrzco1.cloudfront.net/${productInfo.image.key}`}
                 alt="cart item"
               />
             </div>
