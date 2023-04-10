@@ -29,15 +29,15 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
     return links
   };
 
-  const tableHeadings = ['Picture', 'Id', 'Name', 'Brand', 'Price', 'Category', 'Sub-Category', 'Action']
+  const tableHeadings = ['Picture', 'Name', 'Brand', 'Price', 'Category', 'Sub-Category', 'Action']
 
-  const searchChange = (e) =>{
+  const searchChange = (e) => {
     setSearchTerm(e.target.value)
     // console.log(searchTerm);
-    }
+  }
 
   return (
-    <div className='bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-100 to-gray-300 h-screen p-4'>
+    <div className='bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-100 to-gray-300 min-h-screen p-4'>
       <div className='max-w-screen-xl mx-auto '>
 
         <div className='flex items-center justify-between pb-4'>
@@ -50,7 +50,6 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
           </form>
         </div>
 
-        
         <table className="min-w-full table table-fixed bg-white rounded shadow">
           <thead>
             <tr className='bg-slate-300'>
@@ -67,16 +66,14 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
                     <td className='text-base py-4 px-5 w-10'>
                       <img src={`https://ds3rnipsrzco1.cloudfront.net/${product.image.key}`} alt={product.name} />
                     </td>
-                    <td className='text-base py-4 px-5 underline text-blue-700 '>
-                      <a href={'/products/show/' + product._id}>{product._id}</a>
+                    <td className='text-base py-4 px-5 truncate underline text-blue-700 '>
+                    <a href={'/products/show/' + product._id}>{product.name}</a>
                     </td>
-                    <td className='text-base py-4 px-5 truncate '>{product.name}</td>
+                    {/* <td className='text-base py-4 px-5 truncate '>{product.name}</td> */}
                     <td className='text-base py-4 px-5 truncate '>{product.brand}</td>
                     <td className='text-base py-4 px-5'>{Number(product.price.$numberDecimal).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</td>
                     <td className='text-base py-4 px-5'>{product.mainCategory}</td>
                     <td className='text-base py-4 px-5'>{product.subCategory}</td>
-                    {/* <td className='text-base py-4 px-5'>{product.quantity}</td>
-                    <td className='text-base py-4 px-5'>{product.quantitySold}</td> */}
                     <td className='text-base h-full py-4 px-5 flex items-center gap-4'>
                       <form className='h-full' action={`/products/${product._id}/edit`}>
                         <GrayButton buttonText="Edit" />
@@ -92,7 +89,7 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
           </tbody>
         </table>
       </div>
-      <div className="max-w-screen-xl mx-auto flex justify-end gap-1 w-full"> 
+      <div className="max-w-screen-xl mx-auto flex justify-end gap-1 w-full">
         {loaded ? pageLinks() : null}
       </div>
     </div>
