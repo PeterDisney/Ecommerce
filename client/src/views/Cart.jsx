@@ -36,7 +36,7 @@ export const Cart = ({ cart, setCart }) => {
     <>
       <Navbar />
       <div className="py-4 bg-gradient-to-br from-slate-50 to-stone-300 min-h-screen">
-        <div className="max-w-screen-xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10 grid-flow-row-dense ">
+        <div className="max-w-screen-xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-5 grid-flow-row-dense px-4">
           {cart.length === 0 ?
             <EmptyCart />
               // ------------ Shopping Cart -------------
