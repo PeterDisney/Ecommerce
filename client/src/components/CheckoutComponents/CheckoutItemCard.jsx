@@ -40,7 +40,7 @@ const CheckoutItemCard = ({ id, quantity }) => {
             <div className="col-span-3 flex gap-2">
               <div className='w-32 shrink-0 p-4'>
                 <div className='w-full relative pb-[56.25%]'>
-                  <img className='w-full h-full absolute object-cover' src={`https://ds3rnipsrzco1.cloudfront.net/${productInfo.image.key}`} alt="cart item" />
+                  <img className='w-full h-full absolute object-scale-down' src={`https://d2tty9970z28ut.cloudfront.net/${productInfo.image.key}`} alt={productInfo.name} />
                 </div>
               </div>
               <div>

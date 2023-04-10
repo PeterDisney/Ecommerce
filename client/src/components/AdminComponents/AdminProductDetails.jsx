@@ -55,7 +55,7 @@ const AdminProductDetails = () => {
           <div className="bg-white col-span-1 sm:col-span-2 lg:col-span-3 items-center p-8 min-h-full">
             <img
               src={`https://ds3rnipsrzco1.cloudfront.net/${productInfo.image.key}`}
-              className=""
+              className="w-full h-full absolute object-scale-down"
               alt={productInfo.name}
             />
           </div>
